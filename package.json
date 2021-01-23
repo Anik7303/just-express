@@ -2,10 +2,12 @@
     "name": "just-express",
     "version": "1.0.0",
     "description": "Udemy Course Content | Just Express",
-    "main": "index.js",
+    "main": "app.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon index.js"
+        "start": "node app.js",
+        "dev": "nodemon app.js",
+        "lint": "eslint ."
     },
     "repository": {
         "type": "git",
@@ -27,6 +29,7 @@
         "morgan": "^1.10.0"
     },
     "devDependencies": {
+        "eslint": "^7.18.0",
         "nodemon": "^2.0.7"
     }
 }
